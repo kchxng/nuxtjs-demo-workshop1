@@ -5,16 +5,16 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Install required packages for node image
-RUN apk --no-cache add curl g++ git make python3
+RUN apk --no-cache add curl g++ git make openssh python3
 
 # Copy over only package.json and yarn.lock (to leverage Docker caching)
 COPY package.json yarn.lock /app/
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --production
 
 # Copy the rest of the application files
-COPY . .
+COPY . ./app
 
 # Build the project
 RUN yarn build
