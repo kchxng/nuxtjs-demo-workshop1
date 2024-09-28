@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@ant-design-vue/nuxt": "^1.4.4",
     "@nuxt/image": "^1.8.0",
+    "@pinia/nuxt": "^0.5.4",
     "chart.js": "^4.4.4",
     "nuxt": "^3.13.0",
     "vue": "latest",

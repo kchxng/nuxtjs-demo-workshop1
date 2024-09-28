@@ -3,7 +3,17 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   css: ["~/assets/css/mycss.css"],
   devtools: { enabled: true },
-  modules: ["dayjs-nuxt", "@nuxt/image", "@nuxtjs/tailwindcss"],
+  modules: [
+    "dayjs-nuxt",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "@ant-design-vue/nuxt",
+    "@pinia/nuxt",
+  ],
+  pinia: {
+    storesDirs: ["./stores/**", "./custom-folder/stores/**"],
+  },
+  antd: {},
   // dayjs: {
   //   locales: ["en", "fr"],
   //   plugins: ["relativeTime", "utc", "timezone"],
