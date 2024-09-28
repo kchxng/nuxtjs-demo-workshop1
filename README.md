@@ -62,10 +62,25 @@ yarn add --dev dayjs-nuxt
 yarn add --dev @nuxtjs/tailwindcss # enable init tailwindcss: npx tailwindcss init
 yarn add chart.js vue-chart-3
 
+# Ant-Design
+npx nuxi@latest module add ant-design-vue
+
+# Pinia for mamanage state
+npx nuxi@latest module add pinia
+
+
+
 # NuxtImg
 npx nuxi@latest module add image
 
 ```
+
+## Theme libraries for UI
+
+- antdv `https://antdv.com/components/overview`
+- vuetifyjs `https://vuetifyjs.com/en/`
+- tailwindcss `https://tailwindui.com/components`
+- Pinia for manage state `https://pinia.vuejs.org/ssr/nuxt.html`
 
 ## Test RestAPI
 
