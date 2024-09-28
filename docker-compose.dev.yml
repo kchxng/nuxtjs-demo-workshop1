@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  nuxt_stock_app:
+    image: codemobiles/nuxt_stock
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nuxt_stock_app1
+    restart: always
+    ports:
+      - 3000:3000
+    env_file: ./.env
